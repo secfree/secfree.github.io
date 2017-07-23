@@ -1,0 +1,28 @@
+                <aside id="col2" class="col-xs-12 col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Posts
+                            </h3>
+                        </div>
+                        <div class="list-group">
+                            {% for post in site.posts limit: 10 %}
+                            <a class="list-group-item" href="{{ post.url }}">{{ post.title }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!--
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Follow
+                            </h3>
+                        </div>
+                        <div class="list-group">
+                            {% for follow in site.data.follow %}
+                            <a class="list-group-item" href="{{ follow.link }}"><i class="fa {{ follow.icon }} fa-lg fa-fw"></i> {{ follow.name }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    -->
+                </aside>

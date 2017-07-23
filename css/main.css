@@ -1,0 +1,37 @@
+table {
+    border:#ccc 2px solid #e0e0e0;
+    border-radius:3px;
+}
+/*
+table th {
+    padding:21px 25px 22px 25px;
+    border-top:1px solid #fafafa;
+    border-bottom:1px solid #e0e0e0;
+}
+table tr {
+    padding-left:20px;
+}
+table td {
+    padding:18px;
+    border-top: 1px solid #ffffff;
+    border-bottom:1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+*/
+table th {
+    padding-left:20px;
+    border-top:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+table tr {
+    padding-left:20px;
+}
+table td {
+    padding-left:18px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}

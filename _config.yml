@@ -1,0 +1,13 @@
+name: secfree
+# url: http://secfree.github.io
+# pygments: true
+safe: true
+lsi: false
+exclude: ["vendor"]
+permalink: /blog/:year/:month/:day/:title.html
+# markdown: redcarpet
+markdown: kramdown
+redcarpet:
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript"]
+kramdown:
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript"]

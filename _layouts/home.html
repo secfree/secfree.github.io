@@ -1,0 +1,25 @@
+{% include header.html %}
+{% include tag_container.html %}
+{% include nav.html %}
+        <div id="wrap">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="/images/hawk.jpg" alt="profile image" class="img-circle">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{ content }} <br />
+                            <div class="center-block">
+                                {% for follow in site.data.follow %}
+                                    <a href="{{ follow.link }}" class="btn btn-default btn-sm"><i class="fa {{ follow.icon }} fa-lg fa-fw"></i> {{ follow.name }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xs-12 col-sm-3">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+{% include footer.html %}
