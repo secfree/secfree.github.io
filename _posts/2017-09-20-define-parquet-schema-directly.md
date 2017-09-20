@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Define parquet schema directly?"
+title: "Define Parquet Schema Directly?"
 ---
 
 After reading some pages and slides about Parquet, I get some questions about defining the schema:
