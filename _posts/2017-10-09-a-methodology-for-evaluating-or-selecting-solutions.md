@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "A methodology for evaluating or selecting solutions"
+title: "A Methodology for Evaluating or Selecting Solutions"
 ---
 
 I am tired of thinking about how to evaluate or select a proper solution. What I need is a methodology. Below is my idea, and I've applied it several times, it's not bad.
