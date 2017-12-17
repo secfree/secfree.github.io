@@ -1,15 +1,11 @@
--   name: GitHub
-    link: https://github.com/secfree
-    icon: fa-github-square
-
 -   name: Stackoverflow
     link: http://stackoverflow.com/users/4164722/secfree
     icon: fa-stack-exchange
 
--   name: Facebook
-    link: https://www.facebook.com/secfree
-    icon: fa-facebook
-
 -   name: Resume
-    link: /downloads/dengzhaoqun-resume-v4.pdf
+    link: /downloads/dengzhaoqun-resume.pdf
     icon: fa-file-pdf-o
+
+-   name: GitHub
+    link: https://github.com/secfree
+    icon: fa-github-square
