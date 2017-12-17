@@ -11,5 +11,5 @@
     icon: fa-facebook
 
 -   name: Resume
-    link: ({{ site.url }}/downloads/dengzhaoqun-resume-v4.pdf)
+    link: {{site.url}}/downloads/dengzhaoqun-resume-v4.pdf
     icon: fa-file-pdf-o
