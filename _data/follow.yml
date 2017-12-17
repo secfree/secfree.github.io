@@ -9,3 +9,7 @@
 -   name: Facebook
     link: https://www.facebook.com/secfree
     icon: fa-facebook
+
+-   name: Resume
+    link: ({{ site.url }}/downloads/dengzhaoqun-resume-v4.pdf)
+    icon: fa-file-pdf-o
