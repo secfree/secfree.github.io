@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "How to assign a weight value for a gitlab issue?"
+title: "How to assign the weight value for a gitlab issue?"
 ---
 
 I'm using [gitlab](http://gitlab.com/) to manage my personal issues about life and study. Gitlab issues have a `weight` attribute with the value range from 1 to 9. I've been thinking for a long time about the assigning standard. Because for judging by direct, it's hard to choose between two adjacent values.
