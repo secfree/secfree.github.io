@@ -6,6 +6,10 @@
     link: /downloads/dengzhaoqun-resume.pdf
     icon: fa-file-pdf-o
 
+-   name: Resume(English)
+    link: /downloads/dengzhaoqun-resume.english.pdf
+    icon: fa-file-pdf-o
+
 -   name: GitHub
     link: https://github.com/secfree
     icon: fa-github-square
