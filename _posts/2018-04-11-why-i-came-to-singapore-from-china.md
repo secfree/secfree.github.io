@@ -7,7 +7,7 @@ title: "Why I came to Singapore from China?"
 
 <br />
 
-Coming to Singapore a big decision for me, and I gave up a lot for this. Record the consideration process can remind me what I'm coming for.
+Coming to Singapore is a big decision for me, and I gave up a lot for this. Record the consideration process can remind me what I'm coming for.
 
 ---
 
