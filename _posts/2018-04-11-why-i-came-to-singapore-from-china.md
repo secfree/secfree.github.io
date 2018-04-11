@@ -78,11 +78,11 @@ The importance of each dimension is varied for each person. To this model, a hig
 
 <br />
 
-- As the growing space of basic salary is small for me, I need to find the start point of my own business.
+- As the growing space of basic salary is small for me, I need more time to think about my future and to find the start point of my own business.
 - Contribute more to the open source community. I don't like to be asked basic interview questions anymore.
 - Be healthier by exercise
 - Investment
 - Improve the level of communication with English
 
 
-This is my original intention. Even though I can't predict the result,  I'll try my best!
+  This is my original intention. Some ideas may be wrong, and I can't predict the result. But, I'll try my best!
