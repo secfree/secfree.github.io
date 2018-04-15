@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Why I came to Singapore from China?"
+title: "Why I Came to Singapore from China?"
 ---
 
 # Why do I write this post?
