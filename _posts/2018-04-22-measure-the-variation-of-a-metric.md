@@ -40,7 +40,7 @@ There's a classic method:
     a * mean + b * \sqrt{variance}
   $$
 
-  a and b are parameters can be adjusted with experience.
+    a and b are parameters can be adjusted with experience.
 
 ---
 
