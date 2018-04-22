@@ -34,7 +34,7 @@ As we can see, there's a significant distance between normal and abnormal points
 There's a classic method:
 
 1. Calculate out the `mean` and `variance` of the previous values
-1. Compare the latest value with $a * mean + b * \sqrt{variance}$. a, b is parameters can be adjusted with experience.
+1. Compare the latest value with $$a * mean + b * \sqrt{variance}$$. a, b is parameters can be adjusted with experience.
 
 ---
 
@@ -57,6 +57,6 @@ The iterative/online algorithm introduced above is not applicable to this case. 
 1. Aggregate the metric daily
 1. Partition the daily metric by each metric's identifier separately
 
-Then, the size need to load is $cardinality(set(item)) * days$. In most times, it's not a large number.
+Then, the size need to load is $$cardinality(set(item)) * days$$. In most times, it's not a large number.
 
 By applying this method, we can aggregate each metric parallelly without loading unrelated data.
