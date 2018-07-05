@@ -9,10 +9,10 @@ title: "A Simple Tool for Searching Hive Tables by Fields with Spark"
 
 You may have a huge volume of data to analyse, include
 
-1. Hundred of tables in a Hive
+1. Hundred of tables in Hive
 1. Hundred of fields in a table
 
-It's very common to do correlation by joining different tables when analysing. The joining condition it's a tuple of fields. In order to finish analyse as soon as possible, you need to check which tables contains some special fields.
+It's very common to do correlation by joining different tables when analysing. The joining condition is a tuple of fields. In order to finish the analyse as soon as possible, you need to check which tables contains some special fields quickly.
 
 ---
 
