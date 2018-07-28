@@ -3,6 +3,10 @@ layout: blog
 title: "A Simple Tool for Searching Hive Tables by Fields with Spark"
 ---
 
+Note: I've update the code in this blog here [spark-table-fields-search](https://github.com/secfree/spark-table-fields-search)
+
+---
+
 # Background
 
 <br />
