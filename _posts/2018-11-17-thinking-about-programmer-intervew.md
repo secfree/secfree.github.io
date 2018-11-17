@@ -40,8 +40,8 @@ Notes
 
 - Some candidates have very good school and company background, but very general technical level. So do not be credulous.
 - For a senior candidate, his thinking and answers should be systematically.
-- For a candidate who has worker several years, I think it's unfair/nonsense to test his algorithm level. So I just focus on the data structure and his coding style.
-- A most times, what the candidate talk in the interview will not make him `senior` enough. He should show his accumulation of the past years.
+- For a candidate who has worked several years, I think it's unfair/nonsense to test his algorithm level. So I just focus on the data structure and his coding style.
+- At most times, what the candidate talk in the interview will not make him `senior` enough. He should show his accumulation of the past years.
 
 Some interesting and related posts
 
