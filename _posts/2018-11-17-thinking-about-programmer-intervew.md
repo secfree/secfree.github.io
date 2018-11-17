@@ -42,3 +42,9 @@ Notes
 - For a senior candidate, his thinking and answers should be systematically.
 - For a candidate who has worker several years, I think it's unfair/nonsense to test his algorithm level. So I just focus on the data structure and his coding style.
 - A most times, what the candidate talk in the interview will not make him `senior` enough. He should show his accumulation of the past years.
+
+Some interesting and related posts
+
+- [How I Hire Programmers](http://www.aaronsw.com/weblog/hiring)
+- [How a programmer reads your resume (comic)](http://stevehanov.ca/blog/index.php?id=56)
+- [How I Hire Programmers - CoolShell](https://coolshell.cn/articles/1870.html)
