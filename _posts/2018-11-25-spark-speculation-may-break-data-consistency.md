@@ -5,6 +5,8 @@ title: "Spark Speculation May Break Data Consistency"
 
 Sometimes we may want to activate the `spark.speculation` option to speed up our job, but it may be dangerous. Why? Because part of our output/update actions may be duplicated, which may break data consistency.
 
+---
+
 Let's show it by a simple test.
 
 ```scala
@@ -85,3 +87,10 @@ Then we check the `stdout` of each task and can find duplicate items
 <img src="/downloads/spark.speculation.4.png" width="70%">
 
 So, be careful about activating this option!
+
+---
+
+Refer
+
+- [How does Spark speculation prevent duplicated work?](http://apache-spark-user-list.1001560.n3.nabble.com/How-does-Spark-speculation-prevent-duplicated-work-td9777.html)
+- https://stackoverflow.com/questions/46375631/setting-spark-speculation-in-spark-2-1-0-while-writing-to-s3
