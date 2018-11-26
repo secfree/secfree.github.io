@@ -75,16 +75,16 @@ spark-submit --master yarn  --conf spark.speculation.quantile=0.1 --conf spark.s
 
 In the stages and tasks view, we can see that the `speculation` triggered.
 
-<img src="/downloads/spark.speculation.1.png" width="70%">
+<img src="/downloads/spark-speculation-1.png" width="70%">
 
-<img src="/downloads/spark.speculation.2.png" width="70%">
+<img src="/downloads/spark-speculation-2.png" width="70%">
 
 Then we check the `stdout` of each task and can find duplicate items
 
 
-<img src="/downloads/spark.speculation.3.png" width="70%">
+<img src="/downloads/spark-speculation-3.png" width="70%">
 
-<img src="/downloads/spark.speculation.4.png" width="70%">
+<img src="/downloads/spark-speculation-4.png" width="70%">
 
 So, be careful about activating this option!
 
