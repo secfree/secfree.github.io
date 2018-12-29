@@ -11,7 +11,7 @@ Sometimes we may get stuck when calling an HBase API, such as `get`. The reason 
 
 Let's show this in detail. First, create an HBase connection to an invalid (host, port)
 
-```scala
+```
 scala> val conf = HBaseConfiguration.create()
 conf: org.apache.hadoop.conf.Configuration = Configuration: core-default.xml, core-site.xml, hbase-default.xml, hbase-site.xml
 scala> conf.set("hbase.zookeeper.quorum", "localhost")
@@ -37,7 +37,7 @@ We can see that it keeps reconnecting in the background, but the "createConnecti
 
 And then we can see that we can not know if the connection is succeeded by the return value.
 
-```scala
+```
 scala> con.
 abort   close   getAdmin   getBufferedMutator   getConfiguration   getRegionLocator   getTable   isAborted   isClosed
 scala> con.isClosed() res1: Boolean = false
@@ -46,7 +46,7 @@ scala> con.isAborted() res2: Boolean = false
 
 Finally, when we try to get a rowkey, the program gets stuck and keeps outputting ERROR messages
 
-```scala
+```
 scala> val table = con.getTable(TableName.valueOf("test"))
 table: org.apache.hadoop.hbase.client.Table = test;hconnection-0x75d6b1dd
 scala> table.get(new Get(Bytes.toBytes("test")))
