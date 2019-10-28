@@ -19,4 +19,4 @@ Finally, we dicided to use the second strategy, below are the reasons:
 - The cost of the first strategy is too high. For example, if we upgrade "m" jobs with "v_a -> v_a+1 -> ... -> v_b", we need to do "m * (b - a)" upgrading units. If using the second strategy, we only need to do "v_a -> v_b", the upgrading units number is "m".
 - However, having too many versions at the same time will also magnify the maintain cost and risk. So we need to do batch upgrading for jobs which is too much behind.
 
-Actually, I think the first strategy is just like streaming processing - process each message when receiving it. While the second strategy likes batch processing, we can control the batch size and decide the processing time, which is of course has a lower cost and easy to maintain.
+Actually, I think the first strategy is just like streaming processing - process each message when receiving it. While the second strategy likes batch processing, we can control the batch size and decide the processing time, which of course has a lower cost and easier to maintain.
