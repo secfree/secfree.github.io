@@ -7,7 +7,7 @@ Taking notes is quite important to (a programmer)/(an engineer), as we need to
 
 - Involve a lot of details to implement a program or resolve real problems.
 - Learn a lot of new technologies to improve systems.
-- Have good structure learning and thinking to beyond scattered points and details. Which needs us to adjust based on previous learning.
+- Have good structure learning and thinking to beyond scattered points and details. Which needs us to adjust the old structure based on previous notes.
 
 My note-taking method and tool have evolved four generations in the past 8+ years of working.
 
@@ -19,7 +19,7 @@ My note-taking method and tool have evolved four generations in the past 8+ year
 
 Requirements
 
-1. Support rich text documents.
+1. Support rich-text documents.
 2. Sync between different clients.
 
 Tools
@@ -52,10 +52,10 @@ Requirements
 
 1. Support markup language.
 2. Sync between different clients.
-3. Events based. This way is consistent with daily work - when we need to implement features or fix bugs:
+3. Events based. This way is consistent with programmers' daily work - when we need to implement features or fix bugs:
     - We will have (a ticket)/(an issue) for each event
     - We update the issue with comments
-    - We can manage and filter tickets with different attributes - labels, time estimation, priory ...
+    - We can manage and filter tickets with different attributes - labels, time estimation, priority ...
     - We can build different boards to track them
 
 Tools
@@ -76,8 +76,8 @@ Requirements
 3. Event level view support.
 4. Infinite-zoom lists. Can zoom in and zoom out easily
 
-    - Zoom in to focus on an item, it likes an event-based view
-    - Zoom out to have a structure view
+    - Zoom in to focus on an item, then it just likes an event-based view
+    - Zoom out to have a high level structure view
 
     With time going, we will experience more events/points and then we will build a more comprehensive structure.
 
