@@ -13,7 +13,7 @@ My note-taking method and tool have evolved four generations in the past 8+ year
 
 ---
 
-# Generation 1: taking notes as documents
+# Generation 1: take notes as documents
 
 <br />
 
