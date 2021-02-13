@@ -13,6 +13,6 @@ sitemap:
 
 ---
 
-- 本站所有文章均为原创, 转载请注明出处.
-- Email: zzd7zzd#gmail.com
+- Email: secfree.teng#gmail.com
+- I am now working in the Data Infra team of Shopee(Singapore). If you have interests in Data Infra or Data Engineer, please send me your resume and let me refer you.
 
