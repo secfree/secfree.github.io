@@ -6,10 +6,10 @@ title: "The Evolution of my note-taking Method and Tool"
 Taking notes is quite important to (a programmer)/(an engineer), as we need to
 
 - Involve a lot of details to implement a program or resolve real problems.
-- Learn a lof of new technologies to improve sytems.
-- Have good structure learning and thinking to beyond scattered points and details. Which need us to adjust based on previous learning.
+- Learn a lot of new technologies to improve systems.
+- Have good structure learning and thinking to beyond scattered points and details. Which needs us to adjust based on previous learning.
 
-My note-taking method and tool has evolved four generations in the past 8+ years of working.
+My note-taking method and tool have evolved four generations in the past 8+ years of working.
 
 ---
 
@@ -28,13 +28,13 @@ Tools
 
 ---
 
-# Generation 2: use markup language to replace rich text
+# Generation 2: use markup language to replace rich-text
 
 <br />
 
 Requirements
 
-1. Support markup language. Then we have a standard way to format the notes and saved a lot time of adjusting the format. A very general markup language is Markdown.
+1. Support markup language. Then we have a standard way to format the notes and saved a lot of time of adjusting the format. A very general markup language is Markdown.
 2. Sync between different clients.
 
 Tools
@@ -76,7 +76,7 @@ Requirements
 3. Event level view support.
 4. Infinite-zoom lists. Can zoom in and zoom out easily
 
-    - Zoom in to focus on an item, it likes an event based view
+    - Zoom in to focus on an item, it likes an event-based view
     - Zoom out to have a structure view
 
     With time going, we will experience more events/points and then we will build a more comprehensive structure.
