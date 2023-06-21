@@ -139,7 +139,7 @@ For this case, the proposed solution has less and more lightweight RPCs.
 
 If executing "head {file}" in an alluxio-fuse mount path, it will generate 3x "getFileInfo" audit log records
 
-- "FuseFileStream$Factory.create" uses it to check if the file `isPresent` and `isCompleted`
+- "FuseFileStream$Factory.create" uses it to check if the file "isPresent" and "isCompleted"
 - "BaseFileSystem.openFile" calls it to
   - Checks if it "isFolder" and "isCompleted"
   - Gets block list and locations
