@@ -57,10 +57,10 @@ For reading a file, below are the rough steps to achieve the above idea
 
   It can be split into two different methods
 
-    - "getMeta", which only returns the metadata of the file
+    - "getMeta"(or reuse the name "getStatus"), which only returns the metadata of the file
     - "getBlocksAndLocations", which returns the block list and locations of the file
 
-2. alluxio-client calls "getMeta"(or reuse the name "getStatus") to get metadata from UFS
+2. alluxio-client calls "getMeta" to get metadata from UFS
 3. alluxio-client calls "getBlocksAndLocations" with "path" and "lastModificationTime" from alluxio-master
 4. alluxio-master does the following checks
     - If the file does not exist in Alluxio, try to load it from UFS
