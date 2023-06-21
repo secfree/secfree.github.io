@@ -55,7 +55,7 @@ For reading a file, below are the rough steps to achieve the above idea
     - The metadata of the file
     - The block list and block locations of the file
 
-  It can be split into two different methods
+    It can be split into two different methods
 
     - "getMeta"(or reuse the name "getStatus"), which only returns the metadata of the file
     - "getBlocksAndLocations", which returns the block list and locations of the file
