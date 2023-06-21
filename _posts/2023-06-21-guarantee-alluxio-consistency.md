@@ -52,20 +52,20 @@ For reading a file, below are the rough steps to achieve the above idea
 
 1. Currently alluxio-client calls "getStatus"(or "getFileInfo" at server side) one or multiple times while reading a file. The return value of "getStatus" contains (based on branch "master-2.x")
 
-  - The metadata of the file
-  - The block list and block locations of the file
+    - The metadata of the file
+    - The block list and block locations of the file
 
   It can be split into two different methods
 
-  - "getMeta", which only returns the metadata of the file
-  - "getBlocksAndLocations", which returns the block list and locations of the file
+    - "getMeta", which only returns the metadata of the file
+    - "getBlocksAndLocations", which returns the block list and locations of the file
 
 2. alluxio-client calls "getMeta"(or reuse the name "getStatus") to get metadata from UFS
 3. alluxio-client calls "getBlocksAndLocations" with "path" and "lastModificationTime" from alluxio-master
 4. alluxio-master does the following checks
-  - If the file does not exist in Alluxio, try to load it from UFS
-  - If the file is in Alluxio but has an older version compared to "lastModificationTime", try to re-sync it from UFS
-  - Otherwise just returns the block list and locations
+    - If the file does not exist in Alluxio, try to load it from UFS
+    - If the file is in Alluxio but has an older version compared to "lastModificationTime", try to re-sync it from UFS
+    - Otherwise just returns the block list and locations
 
 ---
 
