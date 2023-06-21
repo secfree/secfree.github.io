@@ -5,6 +5,8 @@ title: "Guarantee Consistency of Alluxio without Redundant Metadata Sync"
 
 # Background
 
+<br />
+
 Alluxio helps unify users’ data across a variety of platforms while also helping to increase overall I/O throughput. It can be used as a distributed cache layer. We have used Alluxio for a lot of use cases, for example
 
 - Provide POSIX interfaces to clients with alluxio-fuse
@@ -28,7 +30,11 @@ However, this mechanism cannot meet the requirements of users sometimes
 - If "sync.interval > 0"
   - It may have consistency issues. To keep consistency with this setting, we implemented an external service named CacheManager which listens to the audit log of HDFS, and then syncs the updates from HDFS to Alluxio, but it's hard to maintain and cannot resolve the consistency issue completely, as there is still a time gap for the sync.
 
+---
+
 # Proposal
+
+<br />
 
 A possible solution to avoid redundant metadata sync is
 
@@ -61,14 +67,22 @@ For reading a file, below are the rough steps to achieve the above idea
   - If the file is in Alluxio but has an older version compared to "lastModificationTime", try to re-sync it from UFS
   - Otherwise just returns the block list and locations
 
+---
+
 # Benefits
+
+<br />
 
 The benefits of this solution
 - The client can always get consistent results without redundant metadata sync
 - RPCs are more lightweight. Compared to the original "getStatus", "getMeta/getBlocksAndLocations" return less information and should have better performance. Actually, there are a lot of cases in the code that call "getStatus" but do not use block-related information of the result. They will also benefit from the more lightweight RPCs.
 - The total number of RPCs can be reduced or at least equal if data in Alluxio is not outdated. This will be explained in the following part.
 
+---
+
 # RPC Comparisons
+
+<br />
 
 We will prove the benefits with real cases in this part.
 
@@ -84,7 +98,11 @@ This proposal solution just needs one RPC
 
 Even though not all actions can have a 50% decrease, they can also benefit from it. Below are some concrete examples.
 
+---
+
 ## "fs head"
+
+<br />
 
 If executing "alluxio fs head {file}", it will generate 2x "getFileInfo" audit log records
 
@@ -113,7 +131,11 @@ If using the proposed solution
 
 For this case, the proposed solution has less and more lightweight RPCs.
 
+---
+
 ## "head" with alluxio-fuse
+
+<br />
 
 If executing "head {file}" in an alluxio-fuse mount path, it will generate 3x "getFileInfo" audit log records
 
@@ -137,7 +159,11 @@ If using the proposed solution
 | client -> HDFS (getMeta) | 3 |
 | client -> Alluxio (getBlocksAndLocations) | 1 |
 
+---
+
 ## "fs ls"
+
+<br />
 
 If executing "alluxio fs ls {path}", it will generate 1x "listStatus" audit log record.
 For this case, if using "sync.interval=0", it has the following RPCs
@@ -155,7 +181,11 @@ If using the proposed solution
 
 For this case, the proposed solution can reduce 50% RPCs.
 
+---
+
 # Implementation and Plan
+
+<br />
 
 Here are some considerations for implementation.
 
