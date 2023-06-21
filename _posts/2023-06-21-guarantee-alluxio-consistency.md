@@ -95,7 +95,7 @@ If executing "alluxio fs head {file}", it will generate 2x "getFileInfo" audit l
 
 For this case, if using "sync.interval=0", it has the following RPCs
 
-<img src="/downloads/230621-alluxio-02.png" width="70%">
+<img src="/downloads/230621-alluxio-02.png" height="50%">
 
 | RPC | times |
 | --- | --- |
